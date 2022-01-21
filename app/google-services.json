@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "776050661610",
+    "firebase_url": "https://basefire2-d0adc.firebaseio.com",
+    "project_id": "basefire2-d0adc",
+    "storage_bucket": "basefire2-d0adc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776050661610:android:47801567ef6da222c85f93",
+        "android_client_info": {
+          "package_name": "com.example.basefire2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776050661610-9a0e3si8aceabjec8dpg30iqiq08t8ir.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.basefire2",
+            "certificate_hash": "584c2f808ac3a4164918fc275cdd8c18da6bbe3e"
+          }
+        },
+        {
+          "client_id": "776050661610-kmatffo1krdgjmtu7mve99gko7ucr09l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsd73PF0gz6eJPwCslizw_h-xjawBTK2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776050661610-kmatffo1krdgjmtu7mve99gko7ucr09l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/design_default_color_on_primary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_Titulo"
+        android:layout_width="191dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="40dp"
+        android:text="REPORTE PALAS "
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_equipo"
+        android:layout_width="113dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Equipo"
+        android:inputType="phone"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toEndOf="@+id/txt_Titulo2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Titulo" />
+
+    <TextView
+        android:id="@+id/txt_Titulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="EH"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Titulo" />
+
+    <TextView
+        android:id="@+id/txt_Titulo3"
+        android:layout_width="246dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="DESCRIPCION SUCESO"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_equipo" />
+
+    <TextView
+        android:id="@+id/txt_Titulo4"
+        android:layout_width="329dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="4dp"
+        android:text="DESCRIPCION CORRECTIVO"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_descripcion" />
+
+    <EditText
+        android:id="@+id/edt_descripcion"
+        android:layout_width="364dp"
+        android:layout_height="75dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Describir Suceso"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Titulo3" />
+
+    <EditText
+        android:id="@+id/edt_descripcion_correctivo"
+        android:layout_width="364dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Describir Correctivo"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Titulo3" />
+
+    <ImageButton
+        android:id="@+id/btn_save"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="12dp"
+        android:onClick="Guardar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_descripcion_correctivo"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+    <ImageButton
+        android:id="@+id/btn_mostrar"
+        android:layout_width="75dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="12dp"
+        android:onClick="Mostrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_descripcion_correctivo"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <ListView
+        android:id="@+id/lvtxt_1"
+        android:layout_width="366dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_descripcion_correctivo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
